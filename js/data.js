@@ -128,5 +128,18 @@ const characters = [
     status: "available",
     image: "./images/nbr-035.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=6030"
+  },
+  {
+    id: 10,
+    name: "NBR-020",
+    species: "누비루",
+    s: "뽀",
+    d: "킴컁",
+    a: "킴컁",
+    description: "킴컁님과의 아티스트 콜라보 개체입니다!",
+    price: "20,000원",
+    status: "available",
+    image: "./images/nbr-020.jpg",
+    link: "https://thespecieslab.com/pages/character.html?id=2014"
   }
 ];
