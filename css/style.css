@@ -208,6 +208,16 @@ img {
   background: var(--tint-pink);
 }
 
+.species-filter button.filter-sold:not(.active) {
+  color: var(--color-accent-pink);
+  opacity: 0.6;
+}
+
+.species-filter button.filter-sold:not(.active):hover {
+  opacity: 1;
+  background: var(--hover-pink);
+}
+
 .search-box input {
   width: 100%;
   border: 1px solid var(--color-border-strong);
@@ -366,6 +376,14 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.character-status-sold {
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent-pink);
+  opacity: 0.85;
 }
 
 .price-option {

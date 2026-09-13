@@ -1,5 +1,7 @@
 // 메뉴 생성 / 검색 / 필터 / 렌더링 담당 파일
 
+const SOLD_FILTER = "SOLD";
+
 const state = {
   species: "ALL",
   keyword: ""
@@ -10,6 +12,24 @@ function getSpeciesList(list) {
   return Array.from(set);
 }
 
+function createFilterButton(label, value) {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  btn.textContent = label;
+
+  if (value === state.species) {
+    btn.classList.add("active");
+  }
+
+  btn.addEventListener("click", () => {
+    state.species = value;
+    renderFilterMenu();
+    renderList();
+  });
+
+  return btn;
+}
+
 function renderFilterMenu() {
   const container = document.getElementById("speciesFilter");
   container.innerHTML = "";
@@ -17,34 +37,30 @@ function renderFilterMenu() {
   const speciesList = ["ALL", ...getSpeciesList(characters)];
 
   speciesList.forEach((sp) => {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.textContent = sp;
-
-    if (sp === state.species) {
-      btn.classList.add("active");
-    }
-
-    btn.addEventListener("click", () => {
-      state.species = sp;
-      renderFilterMenu();
-      renderList();
-    });
-
-    container.appendChild(btn);
+    container.appendChild(createFilterButton(sp, sp));
   });
+
+  // 판매완료는 종족 목록에 섞지 않고, 항상 마지막에 별도 상태 필터로 렌더링한다.
+  const soldBtn = createFilterButton("판매완료", SOLD_FILTER);
+  soldBtn.classList.add("filter-sold");
+  container.appendChild(soldBtn);
 }
 
 function matchesFilter(c) {
-  const speciesMatch = state.species === "ALL" || c.species === state.species;
-
   const keyword = state.keyword.trim().toLowerCase();
   const searchMatch =
     !keyword ||
     c.name.toLowerCase().includes(keyword) ||
     c.species.toLowerCase().includes(keyword);
 
-  return speciesMatch && searchMatch;
+  if (state.species === SOLD_FILTER) {
+    return c.status === "sold" && searchMatch;
+  }
+
+  const isAvailable = c.status !== "sold";
+  const speciesMatch = state.species === "ALL" || c.species === state.species;
+
+  return isAvailable && speciesMatch && searchMatch;
 }
 
 function setPlaceholder(imageWrap) {
@@ -174,7 +190,12 @@ function createInfoElement(c) {
     info.appendChild(description);
   }
 
-  if (c.price) {
+  if (c.status === "sold") {
+    const sold = document.createElement("p");
+    sold.className = "character-status-sold";
+    sold.textContent = "판매완료";
+    info.appendChild(sold);
+  } else if (c.price) {
     info.appendChild(createPriceElement(c.price));
   }
 
