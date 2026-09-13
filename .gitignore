@@ -1,0 +1,6 @@
+# 커미션 사진 원본 백업 (images/commission/ 에 정리된 사본을 실제로 사용)
+images/commision/
+
+# OS
+.DS_Store
+Thumbs.db

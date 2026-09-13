@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>💌 뽀 개인분양 💌</title>
+<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title"><a href="./index.html" class="site-title-link">💌 뽀의 분양캐 리스트 💌</a></h1>
+      <nav class="top-nav">
+        <a href="./index.html" class="top-nav-link active">ADOPT</a>
+        <a href="./commission.html" class="top-nav-link">COMMISSION</a>
+        <a href="./info.html" class="top-nav-link">INFO</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="scrollSentinel" class="scroll-sentinel" aria-hidden="true"></div>
+
+  <div class="controls">
+    <nav class="species-filter" id="speciesFilter"></nav>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="캐릭터명이나 종족명을 검색해보세용~~"
+        autocomplete="off"
+      />
+    </div>
+  </div>
+
+  <main class="character-list" id="characterList"></main>
+
+  <p class="empty-message" id="emptyMessage" hidden>분양 준비중 입니당!</p>
+
+  <footer class="site-footer">
+    <p class="footer-contact">
+      분양문의는 트위터(X) :
+      <a
+        class="footer-link"
+        href="https://x.com/__BORIBORI__"
+        target="_blank"
+        rel="noopener noreferrer"
+      >@__BORIBORI__</a>
+      로 연락주세요🥰
+    </p>
+    <p class="footer-copyright">© BBO. All rights reserved.</p>
+  </footer>
+
+  <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="맨 위로 이동"><span class="scroll-top-arrow" aria-hidden="true"></span></button>
+
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/scroll-top.js"></script>
+</body>
+</html>
