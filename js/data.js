@@ -52,6 +52,45 @@ const characters = [
     link: "https://thespecieslab.com/pages/character.html?id=5362"
   },
   {
+    id: 11,
+    name: "백룸맛 스트로",
+    species: "STRO(스트로)",
+    s: "뽀",
+    d: "뽀",
+    a: "뽀",
+    description: "",
+    price: "7,000원",
+    status: "sold",
+    image: "./images/stro-009.jpg",
+    link: "https://thespecieslab.com/pages/character.html?id=6116"
+  },
+  {
+    id: 12,
+    name: "풀룸맛 스트로",
+    species: "STRO(스트로)",
+    s: "뽀",
+    d: "뽀",
+    a: "뽀",
+    description: "",
+    price: "7,000원",
+    status: "available",
+    image: "./images/stro-010.jpg",
+    link: "https://thespecieslab.com/pages/character.html?id=6117"
+  },
+  {
+    id: 13,
+    name: "드림코어맛 스트로",
+    species: "STRO(스트로)",
+    s: "뽀",
+    d: "뽀",
+    a: "뽀",
+    description: "",
+    price: "7,000원",
+    status: "available",
+    image: "./images/stro-011.jpg",
+    link: "https://thespecieslab.com/pages/character.html?id=6118"
+  },
+  {
     id: 1,
     name: "NBR-018 꿈재단사",
     species: "누비루",
@@ -141,44 +180,5 @@ const characters = [
     status: "available",
     image: "./images/nbr-020.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=2014"
-  },
-  {
-    id: 11,
-    name: "백룸맛 스트로",
-    species: "STRO(스트로)",
-    s: "뽀",
-    d: "뽀",
-    a: "뽀",
-    description: "",
-    price: "7,000원",
-    status: "available",
-    image: "./images/stro-009.jpg",
-    link: "https://thespecieslab.com/pages/character.html?id=6116"
-  },
-  {
-    id: 12,
-    name: "풀룸맛 스트로",
-    species: "STRO(스트로)",
-    s: "뽀",
-    d: "뽀",
-    a: "뽀",
-    description: "",
-    price: "7,000원",
-    status: "available",
-    image: "./images/stro-010.jpg",
-    link: "https://thespecieslab.com/pages/character.html?id=6117"
-  },
-  {
-    id: 13,
-    name: "드림코어맛 스트로",
-    species: "STRO(스트로)",
-    s: "뽀",
-    d: "뽀",
-    a: "뽀",
-    description: "",
-    price: "7,000원",
-    status: "available",
-    image: "./images/stro-011.jpg",
-    link: "https://thespecieslab.com/pages/character.html?id=6118"
   }
 ];
