@@ -101,7 +101,7 @@ const characters = [
     price: "7,000원",
     status: "available",
     image: "./images/stro-012.jpg",
-    link: ""
+    link: "https://thespecieslab.com/pages/character.html?id=7402"
   },
   {
     id: 1,
