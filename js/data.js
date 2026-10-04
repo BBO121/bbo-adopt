@@ -136,7 +136,7 @@ const characters = [
     s: "뽀",
     d: "뽀",
     a: "뽀",
-    description: "러프상태입니다! 문의 주시면 완성해서 보내드립니다!",
+    description: "",
     price: "8,000원",
     status: "available",
     image: "./images/nbr-031.jpg",
