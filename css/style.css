@@ -622,6 +622,44 @@ img {
   text-align: center;
 }
 
+.commission-slot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px 10px;
+  margin: 16px auto 0;
+  padding: 9px 16px;
+  max-width: 360px;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-pink);
+  border-bottom: 1px solid var(--color-pink);
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.slot-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-pink);
+}
+
+.slot-hearts {
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  line-height: 1;
+}
+
+.slot-sep {
+  color: var(--color-text-tertiary);
+}
+
+.slot-remain {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
 .commission-block {
   margin-top: 44px;
   padding-top: 32px;

@@ -73,7 +73,7 @@ const characters = [
     a: "뽀",
     description: "",
     price: "7,000원",
-    status: "available",
+    status: "sold",
     image: "./images/stro-010.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=6117"
   },
@@ -85,10 +85,23 @@ const characters = [
     d: "뽀",
     a: "뽀",
     description: "",
-    price: "7,000원",
+    price: ["7,000원", "종족연구소 400 연구기록"],
     status: "available",
     image: "./images/stro-011.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=6118"
+  },
+  {
+    id: 14,
+    name: "벚꽃맛 스트로",
+    species: "STRO(스트로)",
+    s: "뽀",
+    d: "뽀",
+    a: "뽀",
+    description: "",
+    price: "7,000원",
+    status: "available",
+    image: "./images/stro-012.jpg",
+    link: ""
   },
   {
     id: 1,
@@ -99,7 +112,7 @@ const characters = [
     a: "모로",
     description: "모로님과의 아티스트 콜라보 개체입니다!",
     price: "20,000원",
-    status: "available",
+    status: "sold",
     image: "./images/nbr-018.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=974"
   },
@@ -111,7 +124,7 @@ const characters = [
     d: "뽀",
     a: "뽀",
     description: "",
-    price: "7,000원",
+    price: "8,000원",
     status: "sold",
     image: "./images/nbr-030.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=5542"
@@ -124,7 +137,7 @@ const characters = [
     d: "뽀",
     a: "뽀",
     description: "러프상태입니다! 문의 주시면 완성해서 보내드립니다!",
-    price: ["6,000원", "종족연구소 300 연구기록"],
+    price: "8,000원",
     status: "available",
     image: "./images/nbr-031.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=6026"
@@ -137,7 +150,7 @@ const characters = [
     d: "뽀",
     a: "뽀",
     description: "러프상태입니다! 문의 주시면 완성해서 보내드립니다!",
-    price: ["6,000원", "종족연구소 300 연구기록"],
+    price: "8,000원",
     status: "available",
     image: "./images/nbr-032.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=6027"
@@ -149,24 +162,11 @@ const characters = [
     s: "뽀",
     d: "뽀",
     a: "뽀",
-    description: "러프상태입니다! 문의 주시면 완성해서 보내드립니다!",
-    price: ["6,000원", "종족연구소 300 연구기록"],
+    description: "",
+    price: "8,000원",
     status: "available",
     image: "./images/nbr-033.jpg",
     link: "https://thespecieslab.com/pages/character.html?id=6028"
-  },
-  {
-    id: 6,
-    name: "NBR-035 녹은 독극물",
-    species: "누비루",
-    s: "뽀",
-    d: "뽀",
-    a: "뽀",
-    description: "러프상태입니다! 문의 주시면 완성해서 보내드립니다!",
-    price: ["6,000원", "종족연구소 300 연구기록"],
-    status: "available",
-    image: "./images/nbr-035.jpg",
-    link: "https://thespecieslab.com/pages/character.html?id=6030"
   },
   {
     id: 10,
